@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cerimonies</h1>
+
+<div id="cerimonies">
+  <% @ceremonies.each do |ceremony| %>
+    <%= render ceremony %>
+    <p>
+      <%= link_to "Show this ceremony", ceremony %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ceremony", new_ceremony_path %>

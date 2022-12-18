@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ceremony %>
+
+<div>
+  <%= link_to "Edit this ceremony", edit_ceremony_path(@ceremony) %> |
+  <%= link_to "Back to cerimonies", ceremonies_path %>
+
+  <%= button_to "Destroy this ceremony", @ceremony, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ceremony parts</h1>
+
+<div id="ceremony_parts">
+  <% @ceremony_parts.each do |ceremony_part| %>
+    <%= render ceremony_part %>
+    <p>
+      <%= link_to "Show this ceremony part", ceremony_part %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ceremony part", new_ceremony_part_path %>

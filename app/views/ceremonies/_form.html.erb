@@ -1,0 +1,32 @@
+<%= form_with(model: ceremony) do |form| %>
+  <% if ceremony.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ceremony.errors.count, "error") %> prohibited this ceremony from being saved:</h2>
+
+      <ul>
+        <% ceremony.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :starts_at, style: "display: block" %>
+    <%= form.datetime_field :starts_at %>
+  </div>
+
+  <div>
+    <%= form.label :finish_at, style: "display: block" %>
+    <%= form.datetime_field :finish_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

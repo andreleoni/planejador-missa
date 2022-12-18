@@ -1,0 +1,2 @@
+module CeremonyPartsHelper
+end

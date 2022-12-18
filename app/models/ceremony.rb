@@ -1,0 +1,2 @@
+class Ceremony < ApplicationRecord
+end

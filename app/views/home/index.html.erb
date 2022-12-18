@@ -1,0 +1,15 @@
+<h1>Cerimonias</h1>
+
+<% @cerimonies&.each do |ceremony| %>
+  <%= link_to ceremony.title, ceremony %>
+<% end %>
+
+<br>
+<br>
+<br>
+
+<%= link_to "Cerimônias", ceremonies_path %>
+
+<br>
+
+<%= link_to "Cadastro de partes das cerimônias", ceremony_parts_path %>
