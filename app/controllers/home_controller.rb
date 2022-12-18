@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @cerimonies = Ceremony.all
+    @ceremonies = Ceremony.all
   end
 end

@@ -1,1 +1,1 @@
-json.array! @cerimonies, partial: "cerimonies/ceremony", as: :ceremony
+json.array! @ceremonies, partial: "cerimonies/ceremony", as: :ceremony
